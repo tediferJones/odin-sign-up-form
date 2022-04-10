@@ -10,46 +10,56 @@
 <body>
     <div class="image_container">
         <div class="logo">
-            <img src="wifi-wlan-icon.png" alt="Empty Mail Box">
-            <div>My Super Interesting Newsletter!</div>
+            <img class="my_title" src="wifi-wlan-icon.png" alt="Empty Mail Box">
+            <div class="my_title">My Super Awesome Service!</div>
         </div>
         <img src="backdrop.jpg" alt="Soothing Background">
         <div class="credit">Photo by <a href="https://unsplash.com/photos/25xggax4bSA">Halie West</a></div>
     </div>
     <div class="info_container">
-        <div class="message">This is not a real sign-up form!  This only exists for me to practice my form making skills!  What do you think?  Is this a form, or is this a form?  Personally, I think it's a form</div>
+        <div class="message1">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</div>
+        <div class="message2">You <em>know</em> you want to.</div>
         <div class="my_form">
             <form>
                 <div class="form_container">
-                    <div>Please Input Your Information Below!</div>
+                    <legend>Let's do this!</legend>
                     <div class="form_row">
-                        <label for="fname">FIRST NAME</label>
-                        <input type="text" id="fname">
-
-                        <label for="lname">LAST NAME</label>
-                        <input type="text" id="lname">
+                        <div class="input_container">
+                            <label for="fname">FIRST NAME</label>
+                            <input type="text" id="fname" placeholder="John" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="lname">LAST NAME</label>
+                            <input type="text" id="lname" placeholder="Doe" required>
+                        </div>
                     </div>
 
                     <div class="form_row">
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email">
-
-                        <label for="phone_num">PHONE NUMBER</label>
-                        <input type="tell" id="phone_num">
+                        <div class="input_container">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="john_doe@email.com" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="phone_num">PHONE NUMBER</label>
+                            <input type="tell" id="phone_num" placeholder="(123)-456-7890" required>
+                        </div>
                     </div>
 
                     <div class="form_row">
-                        <label for="password">PASSWORD</label>
-                        <input type="password" id="password">
-
-                        <label for="confirm_password">CONFIRM PASSWORD</label>
-                        <input type="password" id="confirm_password">
+                        <div class="input_container">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <div class="input_container">
+                            <label for="confirm_password">CONFIRM PASSWORD</label>
+                            <input type="password" id="confirm_password" required>
+                        </div>
                     </div>
                 </div>
 
-                <input type="submit" value="Create Account">
+                <input type="submit" value="Create Account" class="submit_button">
             </form>
-            <div>Already have an account? <a href="www.google.com">Log in</a></div>
+            <div class="login">Already have an account? <a href="www.google.com" class="login_link">Log in</a></div>
         </div>
     </div>
 

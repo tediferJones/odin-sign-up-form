@@ -2,10 +2,11 @@ body {
     margin: 0;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 .image_container {
-    height: 100vh;
+    height: inherit;
     width: auto;
     position: relative;
 }
@@ -15,10 +16,9 @@ img {
 }
 
 .logo {
-    background-color: rgb(47, 61, 93);
+    background-color: rgba(47, 61, 93, 0.8);
     color: white;
-    font-size:36px;
-    opacity: 75%;
+    font-size: 36px;
     height: 96px;
     width: 100%;
 
@@ -48,24 +48,85 @@ a {
 }
 
 .info_container {
+    background-color: #f2f4f8;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 48px;
 }
 
-.message {
-    font-size: 48px;
+.message1, .message2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 48px;
 }
 
+.message2 {
+    padding-top: 0px;
+}
 .form_container {
-    background-color: gainsboro;
+    background-color: white;
+    padding: 48px;
+    box-shadow: 0px 4px 10px;
+}
+
+legend {
+    padding-bottom: 24px;
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .form_row {
     display: flex;
+    gap: 144px;
+    padding: 18px 0px;
 }
 
-input, label {
-    display:block;
+.input_container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: rgb(92, 100, 94);
+    font-size: 16;
+    font-weight: bold;
+}
+
+input {
+    font-size: 24px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: #E5E7EB;
+    height: 1.2em;
+}
+
+.submit_button {
+    height: 48px;
+    width: 288px;
+    border-radius: 8px;
+    margin: 48px 0px 0px 48px;
+
+    background-color: #596D48;
+    color: white;
+    font-weight: 500;
+}
+
+.login {
+    padding: 48px;
+    font-size: 24px;
+}
+
+.login_link {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+input:focus {
+    border-width: 2px;
+    border-color: royalblue;
+    outline: royalblue;
+
+    box-shadow: 2px 2px 2px royalblue;
 }
