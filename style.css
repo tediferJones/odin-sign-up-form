@@ -17,8 +17,9 @@ img {
 .logo {
     background-color: rgb(47, 61, 93);
     color: white;
+    font-size:36px;
     opacity: 75%;
-    height: 48px;
+    height: 96px;
     width: 100%;
 
     position: absolute;
@@ -27,6 +28,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 12px;
 }
 
 .credit {
@@ -38,6 +40,7 @@ img {
 
     display: flex;
     justify-content: center;
+    gap: 6px;
 }
 
 a {
@@ -45,16 +48,24 @@ a {
 }
 
 .info_container {
-    margin-left: 48px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 48px;
 }
 
 .message {
     font-size: 48px;
 }
 
+.form_container {
+    background-color: gainsboro;
+}
+
 .form_row {
     display: flex;
+}
+
+input, label {
+    display:block;
 }
